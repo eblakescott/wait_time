@@ -17,7 +17,7 @@
 # encoding: utf-8
 Location.delete_all
 Location.create(title: 'Field Museum',
-  type: 'Museum',  
+  category: 'Museum',  
 description: 
     %{<p>
         CoffeeScript is JavaScript done right. It provides all of JavaScript's
@@ -29,7 +29,7 @@ description:
   image_url:   'field_museum.jpg')
 # . . .
 Location.create(title: 'Lollapalooza',
-  type: 'Event',  
+  category: 'Event',  
 description:
     %{<p>
         Ruby is the fastest growing and most exciting dynamic language
@@ -40,7 +40,7 @@ description:
 # . . .
 
 Location.create(title: 'Chicago Restaurant',
-  type: 'Restaurant',
+  category: 'Restaurant',
   description: 
     %{<p>
         <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
