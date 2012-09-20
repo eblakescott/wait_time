@@ -54,7 +54,7 @@ WaitTime::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'no_waiting#index', as: 'No Waiting!'
+   root :to => 'no_waiting#index', as: 'no_waiting'
 
   # See how all your routes lay out with "rake routes"
 
