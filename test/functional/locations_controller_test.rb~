@@ -35,7 +35,7 @@ class LocationsControllerTest < ActionController::TestCase
   end
 
   test "should update location" do
-    put :update, id: @location, location: { description: @location.description, image_url: @location.image_url, title: @location.title, category: @location.category }
+    put :update, id: @location, location: { description: @location.description, image_url: @location.image_url, title: @location.title, type: @location.type }
     assert_redirected_to location_path(assigns(:location))
   end
 

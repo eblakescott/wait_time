@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <b>Category:</b>
-  <%= @location.category %>
+  <b>Type:</b>
+  <%= @location.type %>
 </p>
 
 <p>
