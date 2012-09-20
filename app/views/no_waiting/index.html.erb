@@ -7,6 +7,9 @@
 <%= image_tag(location.image_url) %>
 <h3><%= location.title %></h3>
 <p><%= sanitize(location.description) %></p>
+<div>
+<%= button_to 'Wait Time', waits_path(location_id: location) %>
+</div>
 </div>
 <% end %>
 
