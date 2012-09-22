@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120922163402) do
+ActiveRecord::Schema.define(:version => 20120922204920) do
+
+  create_table "field_museum_times", :force => true do |t|
+    t.string   "current_wait"
+    t.string   "posted_at"
+    t.string   "posted_by"
+    t.text     "comments"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "locations", :force => true do |t|
     t.string   "title"
