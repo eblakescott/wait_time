@@ -1,15 +1,7 @@
-<% if notice %>
-<p id="notice"><%= notice %></p>
-<% end %>
-<h1>Check Wait Times in Chicago</h1>
-<% @locations.each do |location| %>
-<div>
-<%= image_tag(location.image_url) %>
-<h3><%= location.title %></h3>
-<p><%= sanitize(location.description) %></p>
-<div>
-<%= button_to 'Wait Time', locations_path(time: location) %>
-</div>
-</div>
-<% end %>
-
+<h1>What Are You Waiting For?</h1>
+<ul>
+<li><a href="/museums">Museums</a></li>
+<li><a href="/clubs">Clubs</a></li>
+<li><a href="/bars">Bars</a></li>
+<li><a href="/restaurants">Restaurants</a></li>
+</ul>
