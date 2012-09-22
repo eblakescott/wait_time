@@ -1,0 +1,29 @@
+<h1>Listing field_museum_times</h1>
+
+<table>
+  <tr>
+    <th>Current wait</th>
+    <th>Posted at</th>
+    <th>Posted by</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @field_museum_times.each do |field_museum_time| %>
+  <tr>
+    <td><%= field_museum_time.current_wait %></td>
+    <td><%= field_museum_time.posted_at %></td>
+    <td><%= field_museum_time.posted_by %></td>
+    <td><%= field_museum_time.comments %></td>
+    <td><%= link_to 'Show', field_museum_time %></td>
+    <td><%= link_to 'Edit', edit_field_museum_time_path(field_museum_time) %></td>
+    <td><%= link_to 'Destroy', field_museum_time, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Field museum time', new_field_museum_time_path %>

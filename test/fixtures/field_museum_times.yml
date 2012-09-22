@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  current_wait: MyString
+  posted_at: MyString
+  posted_by: MyString
+  comments: MyText
+
+two:
+  current_wait: MyString
+  posted_at: MyString
+  posted_by: MyString
+  comments: MyText

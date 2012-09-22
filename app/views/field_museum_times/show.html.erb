@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Current wait:</b>
+  <%= @field_museum_time.current_wait %>
+</p>
+
+<p>
+  <b>Posted at:</b>
+  <%= @field_museum_time.posted_at %>
+</p>
+
+<p>
+  <b>Posted by:</b>
+  <%= @field_museum_time.posted_by %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @field_museum_time.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_field_museum_time_path(@field_museum_time) %> |
+<%= link_to 'Back', field_museum_times_path %>

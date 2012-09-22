@@ -1,4 +1,6 @@
 WaitTime::Application.routes.draw do
+  resources :field_museum_times
+
   resources :museums
 
   get "no_waiting/index"

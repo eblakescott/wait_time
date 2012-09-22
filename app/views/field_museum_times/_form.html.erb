@@ -1,0 +1,33 @@
+<%= form_for(@field_museum_time) do |f| %>
+  <% if @field_museum_time.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@field_museum_time.errors.count, "error") %> prohibited this field_museum_time from being saved:</h2>
+
+      <ul>
+      <% @field_museum_time.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :current_wait %><br />
+    <%= f.text_field :current_wait %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_at %><br />
+    <%= f.text_field :posted_at %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_by %><br />
+    <%= f.text_field :posted_by %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
