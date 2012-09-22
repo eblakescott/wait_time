@@ -1,0 +1,25 @@
+<h1>Listing current_waits</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Wait</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @current_waits.each do |current_wait| %>
+  <tr>
+    <td><%= current_wait.location_id %></td>
+    <td><%= current_wait.wait_id %></td>
+    <td><%= link_to 'Show', current_wait %></td>
+    <td><%= link_to 'Edit', edit_current_wait_path(current_wait) %></td>
+    <td><%= link_to 'Destroy', current_wait, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Current wait', new_current_wait_path %>

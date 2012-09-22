@@ -1,0 +1,2 @@
+module CurrentWaitsHelper
+end
