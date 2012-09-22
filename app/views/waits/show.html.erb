@@ -1,15 +1,10 @@
+<% if notice %>
 <p id="notice"><%= notice %></p>
+<% end %>
+<h2>Current Wait Time</h2>
+<ul>
+<% @wait.current_waits.each do |item| %>
+<li><%= item.location.title %></li>
+<% end %>
+</ul>
 
-<p>
-  <b>Time:</b>
-  <%= @wait.time %>
-</p>
-
-<p>
-  <b>Location:</b>
-  <%= @wait.location_id %>
-</p>
-
-
-<%= link_to 'Edit', edit_wait_path(@wait) %> |
-<%= link_to 'Back', waits_path %>

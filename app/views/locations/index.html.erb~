@@ -6,11 +6,8 @@
   <tr>
     <td><%= image_tag(location.image_url) %></td>
     <td><%= location.title %></td>
-    <td><%= location.category %></td>
-    <td><%= location.description %></td>
-    <td><%= link_to 'Show', location %></td>
-    <td><%= link_to 'Edit', edit_location_path(location) %></td>
-    <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= sanitize(location.description) %></td>
+    <td><%= @location.waits.last %></td>
   </tr>
 <% end %>
 </table>

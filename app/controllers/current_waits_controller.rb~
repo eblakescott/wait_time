@@ -13,10 +13,7 @@ class CurrentWaitsController < ApplicationController
   # GET /current_waits/1
   # GET /current_waits/1.json
   def show
-    @current_wait = present_wait
-    location = Location.find(params[:location_id])
-    @current_wait = @wait.current_waits.build
-    @current_wait.location = location
+    @current_wait = present_wait.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
