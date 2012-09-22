@@ -8,7 +8,7 @@
 <h3><%= location.title %></h3>
 <p><%= sanitize(location.description) %></p>
 <div>
-<%= button_to 'Wait Time', _path(product_id: product) %>
+<%= button_to 'Wait Time', locations_path(time: location) %>
 </div>
 </div>
 <% end %>

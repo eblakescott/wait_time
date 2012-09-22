@@ -1,0 +1,27 @@
+<h1>Listing museums</h1>
+
+<table>
+  <tr>
+    <th>Image url</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @museums.each do |museum| %>
+  <tr>
+    <td><%= museum.image_url %></td>
+    <td><%= museum.name %></td>
+    <td><%= museum.description %></td>
+    <td><%= link_to 'Show', museum %></td>
+    <td><%= link_to 'Edit', edit_museum_path(museum) %></td>
+    <td><%= link_to 'Destroy', museum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Museum', new_museum_path %>
