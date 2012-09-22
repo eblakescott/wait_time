@@ -5,7 +5,7 @@
 
 <% @museums.each do |museum| %>
   <tr>
-    <%= image_tag(museum.image_url) %>
+    <td><%= image_tag(museum.image_url) %></td>
     <td><%= museum.name %></td>
     <td><%= museum.description %></td>
     <td><%= link_to 'Show Wait Time', museum, class: "btn btn-primary" %></td>

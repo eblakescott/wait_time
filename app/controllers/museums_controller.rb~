@@ -2,7 +2,7 @@ class MuseumsController < ApplicationController
   # GET /museums
   # GET /museums.json
   def index
-    @museums = Museum.order(:name)
+    @museums = Museum.all
 
     respond_to do |format|
       format.html # index.html.erb
