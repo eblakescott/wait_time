@@ -1,4 +1,6 @@
 WaitTime::Application.routes.draw do
+  resources :lines
+
   resources :current_waits
 
   resources :field_museum_times

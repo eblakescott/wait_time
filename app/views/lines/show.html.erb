@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Current wait:</b>
+  <%= @line.current_wait %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @line.location_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_line_path(@line) %> |
+<%= link_to 'Back', lines_path %>
