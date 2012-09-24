@@ -7,7 +7,7 @@
     <td><%= image_tag(location.image_url) %></td>
     <td><%= location.title %></td>
     <td><%= sanitize(location.description) %></td>
-    <td><%=  %></td>
+    <td><%= @location.lines %></td>
   </tr>
 <% end %>
 </table>

@@ -1,3 +1,4 @@
 class Line < ActiveRecord::Base
-  attr_accessible :current_wait, :location_id
+  belongs_to :location
+  attr_accessible :location_id
 end
