@@ -9,8 +9,6 @@ WaitTime::Application.routes.draw do
 
   get "no_waiting/index"
 
-  resources :waits
-
   resources :locations
 
   # The priority is based upon order of creation:
