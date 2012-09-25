@@ -10,6 +10,10 @@
   <%= @line.location_id %>
 </p>
 
+<p>
+  <b>Location Title:</b>
+  <%= @line.location.title %>
+</p>
 
 <%= link_to 'Edit', edit_line_path(@line) %> |
 <%= link_to 'Back', lines_path %>
